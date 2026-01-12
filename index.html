@@ -1,96 +1,54 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl" style="scroll-behavior: smooth;">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halel Gold | נופר ביטון - 052-473-5632</title>
     <style>
-        :root { --gold: #D4AF37; --dark-gold: #b8860b; --white: #ffffff; --light-gold: #faf7eb; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background-color: var(--white); color: #333; line-height: 1.6; }
-        
-        /* סרגל עליון יוקרתי */
-        nav { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 15px rgba(212, 175, 55, 0.2); position: sticky; top: 0; z-index: 1000; border-bottom: 4px solid var(--gold); }
+        :root { --gold: #D4AF37; --dark-gold: #b8860b; --white: #ffffff; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--white); color: #333; font-size: 20px; }
+        nav { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2); border-bottom: 4px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
         .nav-logo img { height: 100px; }
-        .nav-info { text-align: left; }
-        .gold-text-big { color: var(--gold); font-size: 2.5rem; font-weight: 900; line-height: 1; display: block; }
-        .phone-big { color: var(--dark-gold); font-size: 2rem; font-weight: bold; }
-
-        /* אזור כניסה מרשים */
-        .hero { background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('hero.jpg') no-repeat center center/cover; height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border-bottom: 5px solid var(--gold); }
-        .hero-title { background: rgba(255,255,255,0.8); padding: 20px 50px; border-radius: 15px; border: 2px solid var(--gold); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .hero-title h1 { font-size: 4.5rem; color: var(--gold); margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
-
+        .nav-contact { color: var(--gold); font-size: 2.2rem; font-weight: 900; text-align: left; line-height: 1.1; }
+        .hero { background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('Gemini_Generated_Image_5bzck75bzck75bzc.jpg') no-repeat center center/cover; height: 50vh; display: flex; align-items: center; justify-content: center; border-bottom: 5px solid var(--gold); }
+        .hero h1 { font-size: 5rem; color: var(--gold); text-shadow: 2px 2px 8px rgba(0,0,0,0.2); background: rgba(255,255,255,0.8); padding: 20px 40px; border-radius: 20px; border: 2px solid var(--gold); }
         .container { padding: 0 8%; }
-        .section-title { text-align: center; margin: 80px 0 40px; font-size: 3.5rem; color: var(--dark-gold); border-bottom: 3px solid var(--gold); display: inline-block; width: 100%; padding-bottom: 15px; }
-
-        /* גריד מוצרים מעניין */
+        .section-title { text-align: center; margin: 60px 0 40px; font-size: 3.5rem; color: var(--dark-gold); border-bottom: 4px solid var(--gold); display: inline-block; width: 100%; padding-bottom: 15px; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-bottom: 60px; }
-        .product-card { background: var(--light-gold); border-radius: 20px; padding: 30px; text-align: center; border: 1px solid var(--gold); transition: 0.4s; position: relative; overflow: hidden; }
-        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3); background: white; }
-        .product-card img { max-width: 100%; height: 350px; object-fit: contain; border-radius: 10px; margin-bottom: 20px; }
-        .product-card h3 { color: var(--dark-gold); font-size: 2rem; margin: 15px 0; font-weight: 800; }
-        .product-card p { font-size: 1.3rem; color: #555; font-weight: 500; }
-
-        /* אזור יצירת קשר זהב */
-        .contact-section { background: linear-gradient(135deg, #ffffff 0%, #faf7eb 100%); padding: 80px 20px; text-align: center; margin-top: 50px; border-top: 5px solid var(--gold); }
-        .contact-box { max-width: 800px; margin: 0 auto; padding: 50px; border: 4px solid var(--gold); border-radius: 30px; background: white; box-shadow: 0 20px 50px rgba(212, 175, 55, 0.1); }
-        .whatsapp-btn { background: #25D366; color: white; padding: 25px 60px; text-decoration: none; border-radius: 60px; display: inline-block; margin-top: 40px; font-weight: bold; font-size: 2.2rem; transition: 0.3s; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
-        .whatsapp-btn:hover { transform: scale(1.05); background: #128C7E; }
-
-        footer { background: #1a1a1a; color: var(--gold); text-align: center; padding: 40px; font-size: 1.2rem; }
+        .product-card { background: #faf7eb; border-radius: 20px; padding: 30px; text-align: center; border: 1px solid var(--gold); transition: 0.3s; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3); }
+        .product-card img { max-width: 100%; height: 380px; object-fit: contain; border-radius: 10px; margin-bottom: 20px; }
+        .product-card h3 { color: var(--dark-gold); font-size: 2.2rem; margin: 15px 0; }
+        .contact-box { background: white; padding: 60px; text-align: center; margin: 80px 0; border-radius: 30px; border: 5px solid var(--gold); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+        .whatsapp-btn { background: #25D366; color: white; padding: 25px 60px; text-decoration: none; border-radius: 60px; display: inline-block; margin-top: 30px; font-weight: bold; font-size: 2.2rem; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
+        footer { background: #1a1a1a; color: var(--gold); text-align: center; padding: 40px; font-size: 1.4rem; }
     </style>
 </head>
 <body>
-
     <nav>
-        <div class="nav-logo"><img src="logo.jpeg" alt="Halel Gold Logo"></div>
-        <div class="nav-info">
-            <span class="gold-text-big">נופר ביטון</span>
-            <span class="phone-big">052-473-5632</span>
-        </div>
+        <div class="nav-logo"><img src="logo.jpeg" alt="Halel Gold"></div>
+        <div class="nav-contact">נופר ביטון<br>052-473-5632</div>
     </nav>
-
-    <section class="hero">
-        <div class="hero-title">
-            <h1>Halel Gold</h1>
-            <p style="font-size: 1.8rem; color: #444; margin: 5px 0;">חווית בישום וניקיון בסטנדרט של זהב</p>
-        </div>
-    </section>
-
+    <section class="hero"><h1>Halel Gold</h1></section>
     <div class="container">
-        <h2 class="section-title">קולקציית הכביסה והניקוי</h2>
+        <h2 class="section-title">מוצרי הכביסה והניקוי</h2>
         <div class="product-grid">
-            <div class="product-card"><img src="max-laundry.jpg"><h3>נוזל כביסה Max</h3><p>ניקוי עמוק בניחוח יוקרתי שנשאר לאורך זמן</p></div>
-            <div class="product-card"><img src="platinum-floor.webp"><h3>רצפות Platinum</h3><p>ברק מושלם וניחוח משכר בכל ניגוב</p></div>
-            <div class="product-card"><img src="soft-floor.webp"><h3>רצפות Soft</h3><p>ניחוח עדין ונעים לאווירה רגועה בבית</p></div>
+            <div class="product-card"><img src="max-laundry.jpg"><h3>נוזל כביסה Max</h3></div>
+            <div class="product-card"><img src="platinum-floor.webp"><h3>רצפות Platinum</h3></div>
+            <div class="product-card"><img src="soft-floor.webp"><h3>רצפות Soft</h3></div>
         </div>
-
         <h2 class="section-title">מבשמי אריגים ואווירה</h2>
         <div class="product-grid">
-            <div class="product-card"><img src="heaven-spray.jpg"><h3>מבשם Heaven</h3><p>רעננות שמימית על כל טקסטיל בבית</p></div>
-            <div class="product-card"><img src="floral-spray.jpg"><h3>מבשם Floral</h3><p>ניחוח פרחוני אלגנטי ויוקרתי</p></div>
-            <div class="product-card"><img src="fabric-set.jpg"><h3>מארז הבית</h3><p>סט של 4 ניחוחות פרימיום במארז אחד</p></div>
-        </div>
-
-        <h2 class="section-title">פתרונות בישום אוטומטיים</h2>
-        <div class="product-grid">
-            <div class="product-card"><img src="bundle-199.png"><h3>חבילת VIP</h3><p>מפיץ ריח דיגיטלי + סוללות + 2 תרסיסים</p></div>
-            <div class="product-card"><img src="6-מכלי-בישום-1.webp"><h3>סט מילוי 6 יח'</h3><p>כל הניחוחות האהובים למפיץ האוטומטי</p></div>
+            <div class="product-card"><img src="_ADI5924.jpg"><h3>מארז מבשמים מלא</h3></div>
+            <div class="product-card"><img src="heaven-spray.jpg"><h3>מבשם Heaven</h3></div>
+            <div class="product-card"><img src="floral-spray.jpg"><h3>מבשם Floral</h3></div>
         </div>
     </div>
-
-    <section class="contact-section">
-        <div class="contact-box">
-            <h2 style="font-size: 3rem; color: var(--gold); margin-top: 0;">להזמנות וייעוץ אישי:</h2>
-            <span style="font-size: 4rem; display: block; font-weight: 900; color: var(--dark-gold);">נופר ביטון</span>
-            <span style="font-size: 3.5rem; display: block; color: var(--gold); margin-top: 10px;">052-473-5632</span>
-            <a href="https://wa.me/972524735632" class="whatsapp-btn">לחצו כאן להזמנה בוואטסאפ 📱</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Halel Gold | איכות ויוקרה ללא פשרות בהנהלת נופר ביטון</p>
-    </footer>
-
+    <div class="contact-box">
+        <h2 style="font-size: 3.5rem; color: var(--gold); margin: 0;">להזמנות: נופר ביטון</h2>
+        <div style="font-size: 3rem; color: var(--dark-gold); font-weight: bold;">052-473-5632</div>
+        <a href="https://wa.me/972524735632" class="whatsapp-btn">לחצו כאן להזמנה בוואטסאפ 📱</a>
+    </div>
+    <footer>© 2026 Halel Gold - כל הזכויות שמורות לנופר ביטון</footer>
 </body>
 </html>
