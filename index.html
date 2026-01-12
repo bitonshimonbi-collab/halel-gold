@@ -2,59 +2,29 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halel Gold | ניחוח של יוקרה</title>
     <style>
-        :root { --gold: #D4AF37; --dark-gold: #b8860b; --white: #ffffff; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--white); color: #333; line-height: 1.6; }
-        nav { background: white; padding: 10px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .hero { background: #f4f4f4; height: 40vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: var(--dark-gold); border-bottom: 3px solid var(--gold); }
-        .hero h1 { font-size: 3.5rem; margin: 0; }
-        .container { padding: 0 8%; }
-        .section-title { text-align: center; margin: 40px 0 20px; font-size: 2.2rem; color: var(--dark-gold); border-bottom: 2px solid var(--gold); display: inline-block; width: 100%; padding-bottom: 10px; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px; }
-        .product-card { background: #fdfdfd; border-radius: 12px; padding: 15px; text-align: center; border: 1px solid #eee; }
-        .product-card img { max-width: 100%; height: 250px; object-fit: contain; border-radius: 8px; }
-        .contact-box { background: #ebedee; padding: 40px; text-align: center; margin: 40px 8%; border-radius: 20px; border: 2px solid var(--gold); }
-        .whatsapp-btn { background-color: #25D366; color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; display: inline-block; margin-top: 20px; font-weight: bold; font-size: 1.2rem; }
-        footer { background: #222; color: #ccc; text-align: center; padding: 20px; }
+        :root { --gold: #D4AF37; --dark-gold: #b8860b; }
+        body { font-family: sans-serif; margin: 0; text-align: center; background: #fff; }
+        nav { background: #fff; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 10px; }
+        .card img { max-width: 100%; height: 250px; object-fit: contain; }
+        .whatsapp { background: #25D366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; display: inline-block; margin: 20px; font-weight: bold; }
     </style>
 </head>
 <body>
-    <nav>
-        <div style="font-size: 1.5rem; color: var(--dark-gold); font-weight: bold;">Halel Gold</div>
-        <div><strong>נופר ביטון: 052-473-5632</strong></div>
-    </nav>
-    <section class="hero">
-        <h1>Halel Gold</h1>
-        <p style="font-size: 1.5rem;">ניחוח של יוקרה בכל פינה</p>
-    </section>
-    <div class="container">
-        <h2 class="section-title">סדרת הכביסה והניקוי</h2>
-        <div class="product-grid">
-            <div class="product-card"><img src="נוזל כביסה מקס.jpeg" alt="Max Laundry"><h3>נוזל כביסה Max</h3><p>ניקיון עוצמתי בניחוח יוקרה</p></div>
-            <div class="product-card"><img src="נוזל כביסה טופ.jpeg" alt="Top Laundry"><h3>נוזל כביסה Top</h3><p>רעננות שנשמרת לאורך זמן</p></div>
-            <div class="product-card"><img src="מסיר כתמים חדש.jpg" alt="Stain Remover"><h3>מסיר כתמים</h3><p>טיפול יסודי בכל כתם</p></div>
-        </div>
-        <h2 class="section-title">סדרת הרצפות</h2>
-        <div class="product-grid">
-            <div class="product-card"><img src="נוזל רפצות פלטינום.webp" alt="Platinum Floor"><h3>רצפות Platinum</h3><p>ברק מושלם וניחוח משכר</p></div>
-            <div class="product-card"><img src="נוזל רפצות סופט.webp" alt="Soft Floor"><h3>רצפות Soft</h3><p>ניחוח עדין ונעים בבית</p></div>
-        </div>
-        <h2 class="section-title">מבשמי אריגים</h2>
-        <div class="product-grid">
-            <div class="product-card"><img src="_ADI5924.jpg" alt="Set"><h3>מארז מבשמים</h3><p>כל הניחוחות בסט אחד</p></div>
-            <div class="product-card"><img src="_ADI5908.jpg" alt="Heaven"><h3>מבשם Heaven</h3><p>ניחוח שמימי ומרענן</p></div>
-            <div class="product-card"><img src="_ADI5909.jpg" alt="Floral"><h3>מבשם Floral</h3><p>ניחוח פרחוני ויוקרתי</p></div>
-        </div>
+    <nav><h1>Halel Gold</h1><p>נופר ביטון: 052-473-5632</p></nav>
+    
+    <div class="product-grid">
+        <div class="card"><img src="מקס חדש.jpg"><h3>נוזל כביסה MAX</h3></div>
+        <div class="card"><img src="נוזל כביסה טופ.jpeg"><h3>נוזל כביסה TOP</h3></div>
+        <div class="card"><img src="מסיר כתמים חדש.jpg"><h3>מסיר כתמים</h3></div>
+        <div class="card"><img src="נוזל רפצות פלטינום.webp"><h3>סדרת פלטינום</h3></div>
+        <div class="card"><img src="מארז-יפה.PNG"><h3>מארז מבשמים</h3></div>
     </div>
-    <div class="contact-box">
-        <div style="font-size: 2.2rem; color: var(--dark-gold); font-weight: bold;">להזמנות: נופר ביטון</div>
-        <div style="font-size: 1.8rem;">052-473-5632</div>
-        <a href="https://wa.me/972524735632" class="whatsapp-btn">שלחו הודעה להזמנה 📱</a>
-    </div>
-    <footer>
-        <p>© 2026 Halel Gold - נופר ביטון</p>
-    </footer>
+
+    <a href="https://wa.me/972524735632" class="whatsapp">להזמנה בוואטסאפ לחצו כאן</a>
+    <footer><p>© 2026 Halel Gold</p></footer>
 </body>
 </html>
